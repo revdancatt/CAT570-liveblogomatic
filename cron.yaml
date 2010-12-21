@@ -1,0 +1,12 @@
+cron:
+
+- description: Check to see if there are any new liveblogs, status of liveblogs
+  url: /cron/check_latest_blogs
+  schedule: every 10 minutes
+  
+- description: grab the body for the latest liveblogs
+  url: /cron/feed_tasks
+  schedule: every 1 minutes
+  
+
+

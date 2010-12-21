@@ -1,0 +1,9 @@
+A quick (and sloppy) hack to fetch the latest liveblogs from the Guardian (can't 
+trust the flag in the AIP that tells you if it's current or not) and then display
+them broken down into blocks.
+
+TODO:
+1) improve parsing of page to break down blocks correctly, extract "non-blocks"
+2) improve scrolling to not faff around
+3) Post to twitter when there's a new livelbog found
+

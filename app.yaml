@@ -1,0 +1,68 @@
+application: liveblogomatic
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /imgs
+  static_dir: imgs
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /favicon.ico
+  static_files: static/images/favicon.ico
+  upload: static/images/favicon.ico
+
+- url: /apple-touch-icon.png
+  static_files: static/images/apple-touch-icon.png
+  upload: static/images/apple-touch-icon.png
+
+
+
+################################################################################
+# api methods
+################################################################################
+
+- url: /api/gu.get.blocks/.*
+  script: api/gu.get.blocks.py
+
+
+################################################################################
+# the cron tasks
+################################################################################
+
+- url: /cron/check_latest_blogs
+  script: cron/check_latest_blogs.py
+
+- url: /cron/feed_tasks
+  script: cron/feed_tasks.py
+
+
+################################################################################
+# the pages we put into the task queue
+################################################################################
+
+- url: /tasks/fetch_body
+  script: tasks/fetch_body.py
+
+- url: /tasks/fetch_new_blocks
+  script: tasks/fetch_new_blocks.py
+
+
+################################################################################
+#
+################################################################################
+
+- url: /view/.*
+  script: view.py
+
+- url: .*
+  script: index.py

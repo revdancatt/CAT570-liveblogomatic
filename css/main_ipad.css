@@ -1,0 +1,108 @@
+@font-face { font-family: 'DE6'; src: url('/fonts/gdnegyde6bol-webfont.eot'); src: local('?'), url('/fonts/gdnegyde6bol-webfont.woff') format('woff'), url('/fonts/gdnegyde6bol-webfont.ttf') format('truetype'), url('/fonts/gdnegyde6bol-webfont.svg#webfont9VTrFpq0') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'DS3'; src: url('/fonts/gdnsands3reg-webfont.eot'); src: local('?'), url('/fonts/gdnsands3reg-webfont.woff') format('woff'), url('/fonts/gdnsands3reg-webfont.ttf') format('truetype'), url('/fonts/gdnsands3reg-webfont.svg#webfontPQRpR7ED') format('svg'); font-weight: normal; font-style: normal; }
+
+body {
+  background: url("/imgs/lightgraybackground.png") repeat fixed -420px 0 transparent;
+  font-family: DS3, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+header#bunting {
+  background: url("/imgs/headingback.png") repeat fixed 0 0 transparent;  position: fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height: 76px;
+  text-align: center;
+  z-index: 3;
+  padding: 0px;
+}
+
+footer {
+  width:100%;
+	height:24px;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));;
+	padding:4px;
+	border-top:1px solid #444;
+  color: #cccccc;
+  text-align: center;
+}
+
+header#bunting h1 {
+  font-size: 60px;
+  color: #00558e;
+}
+
+header#bunting h1 img {
+  border: 0px;
+}
+
+section#controls {
+  background: url("/imgs/subheadingback.png") repeat fixed center bottom transparent;
+  position: fixed;
+  top:60px;
+  left:0px;
+  width:100%;
+  z-index: 2;
+  padding-bottom: 12px;
+  padding-top: 20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+  color: #00558e;
+}
+
+header#bunting a,
+section#controls a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section#main {
+  width:100%;
+  overflow: hidden;
+}
+
+section#controls aside{
+  float: left;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+section#controls header{
+  font-family: DE6, Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+section#container {
+  margin-left: 120px;
+  padding-top: 30px;
+  background-position: 120px;
+  overflow: auto;
+}
+
+section#container ol {
+  padding-bottom: 30px;
+}
+
+section#container article {
+  width: 460px;
+  float:left;
+  padding: 0 40px;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+section#container article time {
+  font-weight: bold;
+  font-size: 1.6em;
+  display: block;
+  padding-bottom: 16px;
+  
+}
+
+section#container article p {
+  padding-bottom: 16px;
+}
