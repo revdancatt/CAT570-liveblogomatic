@@ -3,3 +3,7 @@
 
 # Ignore (generated) pyc files,
 *.pyc
+
+# Ignore this because it has my secret twitter keys in, need a better way
+# to handle this
+tasks/do_twitter_dance.py
