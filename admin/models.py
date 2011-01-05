@@ -14,6 +14,7 @@ class LiveBlogs(db.Model):
   isLive                  = db.IntegerProperty(default=0)
   liveBloggingNow         = db.IntegerProperty(default=0)
   fetched                 = db.IntegerProperty(default=0)
+  tweeted                 = db.IntegerProperty(default=0)
   backfilled              = db.IntegerProperty(default=0)
   webPublicationDate      = db.DateTimeProperty()
   first_update            = db.DateTimeProperty(auto_now_add=True, required=True)

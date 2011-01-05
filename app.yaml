@@ -56,10 +56,20 @@ handlers:
 - url: /tasks/fetch_new_blocks
   script: tasks/fetch_new_blocks.py
 
+- url: /tasks/do_twitter_dance
+  script: tasks/do_twitter_dance.py
+
 
 ################################################################################
 #
 ################################################################################
+
+- url: /posttweet
+  script: /posttweet.py
+
+- url: /gettoken
+  script: /gettoken.py
+
 
 - url: /view/.*
   script: view.py
