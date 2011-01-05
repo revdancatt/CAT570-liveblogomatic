@@ -17,7 +17,7 @@ import sys
 #
 ################################################################################
 
-fetch_url = 'http://content.guardianapis.com/search?tag=tone%2Fminutebyminute%2C-sport%2Fsport&order-by=newest&format=json&show-fields=headline%2Cthumbnail%2CliveBloggingNow'
+fetch_url = 'http://content.guardianapis.com/search?tag=tone%2Fminutebyminute%2C-sport%2Fsport&section=-sport,-football&order-by=newest&format=json&show-fields=headline%2Cthumbnail%2CliveBloggingNow'
 result = urlfetch.fetch(url=fetch_url)
 
 #
