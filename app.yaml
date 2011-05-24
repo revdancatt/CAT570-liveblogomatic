@@ -70,6 +70,9 @@ handlers:
 - url: /gettoken
   script: /gettoken.py
 
+- url: /readability
+  script: /readability.py
+
 
 - url: /view/.*
   script: view.py
