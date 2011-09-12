@@ -1,5 +1,6 @@
-# Ignore any Komodo project files.
+# Ignore project files
 *.kpf
+*.sublime-workspace
 
 # Ignore (generated) pyc files,
 *.pyc
